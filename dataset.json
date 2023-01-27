@@ -1,0 +1,18 @@
+[{
+  "id": 1,
+  "drug_name": "Acyclovir",
+  "iv_fluid": {
+    "flush":"NaCl 0.9%",
+    "solution":"NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s (including added KCl)"
+  },
+  "Storage": "Store below 25\u0001C in original packaging. Do not refrigerate (may precipitate)",
+  "quantity": 261,
+  "pH": 11,
+  "Incompatibility Drugs": ["WFI containing parabens or benzyl alcohol", "Aztreonam", "cisatracurium", "dobutamine", "dopamine", "foscarnet", "levofloxacin", "meropenem", "morphine sulfate", "ondansetron", "pantoprazole", "pethidine", "piperacillin with tazobactam", "tramadol"],
+  "Compatibile drugs":{
+    "Y-site":[]
+  }
+},
+{
+    
+}]

@@ -1,0 +1,367 @@
+{
+  "VD": [
+    {
+      "Drug names": "Acetaminophen"
+    },
+    {
+      "Drug names": "Acyclovir",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s (including added KCl)",
+      "Storage": "Store below 25\u0001C in original packaging. Do not refrigerate (may precipitate)",
+      "pH": 11,
+      "Incompatibility Drugs": "WFI containing parabens or benzyl alcohol. Aztreonam, cisatracurium, dobutamine, dopamine, foscarnet, levofloxacin, meropenem, morphine sulfate, ondansetron, pantoprazole, pethidine, piperacillin with tazobactam, tramadol.",
+      "Compatibile drugs": "Y-site: Amikacin, ampicillin, benzylpenicillin, cefotaxime, ceftazidime, ceftriaxone, cefuroxime, chloramphenicol sodium succinate, clindamycin, co\u0002trimoxazole, dexamethasone, erythromycin, fluconazole, gentamicin, granisetron, hydrocortisone sodium succinate, imipenem with cilastatin, magnesium sulfate, methylprednisolone sodium succinate, metoclopramide, metronidazole, propofol, ranitidine, remifentanil, tobramycin, vancomycin",
+      "__EMPTY": ","
+    },
+    {
+      "Drug names": "Adenosine",
+      "IV Fluid": "Flush: NaCl 0.9%\r\nSolutions: NaCl 0.9%, Gluc 5%, Hartmann’s",
+      "Storage": "Store below 30\u0001C but do not refrigerate (risk of crystal formation). Discard unused injection solution immediately",
+      "pH": "4.5--7.5",
+      "Incompatibility Drugs": "No information",
+      "Compatibile drugs": "Y-site: Abciximab"
+    },
+    {
+      "Drug names": " Albuterol"
+    },
+    {
+      "Drug names": "Alprostadil"
+    },
+    {
+      "Drug names": "Alteplase",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%",
+      "Storage": "Store below 25\u0001C in original packaging. Protect from light.",
+      "pH": "6.8--7.8",
+      "Incompatibility Drugs": "Alteplase is incompatible with Gluc solutions. Bivalirudin, dobutamine, dopamine, glyceryl trinitrate, heparin sodium.",
+      "Compatibile drugs": "Y-site: Lidocaine, metoprolol"
+    },
+    {
+      "Drug names": "Amikacin.",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Hartmann’s",
+      "Storage": "Store below 25\u0001C in original packaging.",
+      "pH": "3.5--5.5",
+      "Incompatibility Drugs": "Potassium chloride. Aminophylline, amphotericin B, ampicillin, benzylpenicillin, cefotaxime, ceftazidime, ceftriaxone, cefuroxime, gentamicin, heparin sodium, Pabrinex, pantoprazole, phenytoin sodium, propofol, tobramycin",
+      "Compatibile drugs": "Y-site: Aciclovir, adrenaline (epinephrine), calcium gluconate,\r\nchloramphenicol sodium succinate, ciprofloxacin, cisatracurium, clindamycin,\r\ndexamethasone, esmolol, fluconazole, furosemide, granisetron, hydrocortisone\r\nsodium succinate, labetalol, magnesium sulfate, metronidazole, midazolam,\r\nnoradrenaline (norepinephrine), ondansetron, phytomenadione (mixed\r\nmicelles), ranitidine, remifentanil, tigecycline, sodium bicarbonate,\r\nvancomycin, verapamil",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": " Aminophylline",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Hartmann’s (all with added KCl)",
+      "Storage": "Store below 25\u0001C in original packaging. Protect from light. Do not freeze. Discard ampoule if contents discoloured.",
+      "pH": "8.6--10 (precipitation occurs at pH",
+      "Incompatibility Drugs": "Should not be allowed to come into contact with metals. Amiodarone, ciprofloxacin, cisatracurium, clarithromycin, dobutamine, hydralazine, ondansetron.",
+      "Compatibile drugs": "Y-site: Aztreonam, ceftazidime, fluconazole, foscarnet, linezolid, meropenem, micafungin, piperacillin with tazobactam, ranitidine, remifentanil, vecuronium bromide",
+      "__EMPTY": ","
+    },
+    {
+      "Drug names": " Amiodarone",
+      "IV Fluid": "Flush: Gluc 5% Solutions: Gluc 5% (including added KCl)",
+      "Storage": "Store below 25\u0001C in original packaging.",
+      "pH": 4,
+      "Incompatibility Drugs": "Amiodarone is incompatible with NaCl 0.9%. Avoid equipment containing the plasticiser diethylhexyl phthalate (DEHP). Aminophylline, bivalirudin, ceftazidime, digoxin, drotrecogin alfa (activated), furosemide, heparin sodium, imipenem with cilastatin, magnesium sulfate, micafungin, pantoprazole, piperacillin with tazobactam, sodium bicarbonate",
+      "Compatibile drugs": "Y-site: Amikacin, benzylpenicillin, clindamycin, dobutamine, dopamine,\r\nglyceryl trinitrate, lidocaine, noradrenaline, tobramycin, vancomycin",
+      "__EMPTY": ","
+    },
+    {
+      "Drug names": " Amphotericin B",
+      "IV Fluid": "Flush: Gluc 5% Solutions: Gluc 5%",
+      "Storage": "Store at 2-8\u0001C in original packaging",
+      "pH": 5.7,
+      "Incompatibility Drugs": "Amphotericin is incompatible with NaCl 0.9% and all electrolyte solutions. Amphotericin is incompatible with most drugs; care must be taken to avoid inadvertent contact in infusion lines.",
+      "Compatibile drugs": "Y-site: Not recommended",
+      "__EMPTY": ","
+    },
+    {
+      "Drug names": " Amphotericin B Lipid Complex.",
+      "IV Fluid": "Flush: Gluc 5% Solutions: Gluc 5%",
+      "Storage": "Store at 2--8\u0001C in original packaging. Do not freeze",
+      "pH": "5--7",
+      "Incompatibility Drugs": "Amphotericin is incompatible with NaCl 0.9% and all electrolyte solutions. Amphotericin is incompatible with most drugs; care must be taken to avoid inadvertent contact in infusion lines.",
+      "Compatibile drugs": "Y-site: Not recommended"
+    },
+    {
+      "Drug names": " Amphotericin B Liposome"
+    },
+    {
+      "Drug names": "Ampicillin ",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9% (including added KCl)",
+      "Storage": "Store below 25\u0001C",
+      "pH": "8 to 10   ",
+      "Incompatibility Drugs": "Ampicillin is incompatible with Hartmann’s. It is incompatible with Gluc 5% (but may be injected into drip tubing over 3-4 minutes). Sodium bicarbonate. Adrenaline (epinephrine), amikacin, amphotericin, calcium gluconate, cisatracurium, dopamine, erythromycin lactobionate, fluconazole, gentamicin, hydralazine, hydrocortisone sodium succinate, metoclopramide, midazolam, ondansetron, tobramycin, verapamil.",
+      "Compatibile drugs": "Y-site: Aciclovir, aztreonam, chloramphenicol sodium succinate,\r\nclarithromycin, clindamycin, esmolol, flucloxacillin, furosemide,\r\nlabetalol, magnesium sulfate, metronidazole, pantoprazole,\r\nphytomenadione, propofol, remifentanil, vancomycin",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Anidulafungin",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%",
+      "Storage": "Store at 2-8\u0001C in original packaging. Do not freeze",
+      "pH": "3.5--5.5",
+      "Incompatibility Drugs": "Sodium bicarbonate. Amphotericin.",
+      "Compatibile drugs": "Y-site: No information"
+    },
+    {
+      "Drug names": "AquADEKsâ„¢"
+    },
+    {
+      "Drug names": "Arginine"
+    },
+    {
+      "Drug names": " Aspirin "
+    },
+    {
+      "Drug names": " Atropine ",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5% (with added KCl)",
+      "Storage": "Store below 25\u0001C in original packaging. Do not freeze",
+      "pH": "3--6.5",
+      "Incompatibility Drugs": "Flucloxacillin, pantoprazole.",
+      "Compatibile drugs": "Y-site: Dobutamine, fentanyl, furosemide, hydrocortisone sodium succinate, meropenem, metoclopramide, midazolam, ondansetron, ranitidine, verapamil",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Azithromycin"
+    },
+    {
+      "Drug names": "Aztreonam",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s, Ringer’s (all including added KCl)",
+      "Storage": "Store below 25\u0001C in original packaging.",
+      "pH": "4.5--7.5",
+      "Incompatibility Drugs": "Aciclovir, amphotericin B, ampicillin, ganciclovir, metronidazole, vancomycin.",
+      "Compatibile drugs": "Y-site: Amikacin, aminophylline, bumetanide, calcium gluconate, cefotaxime, ceftazidime, ceftriaxone, cefuroxime, ciprofloxacin, cisatracurium, clindamycin, co-trimoxazole, dexamethasone, dobutamine, dopamine, fluconazole, furosemide, gentamicin, granisetron, hydrocortisone sodium succinate, imipenem with cilastatin, magnesium sulfate, methylprednisolone sodium succinate, metoclopramide, piperacillin with tazobactam, propofol, ranitidine, remifentanil, sodium bicarbonate, ticarcillin with clavulanate, tobramycin",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Beractant"
+    },
+    {
+      "Drug names": "Bumetanide",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: Gluc 5%, NaCl 0.9%, Gluc-NaCl, Hartmann’s",
+      "Storage": "Store below 25\u0002C in original packaging.",
+      "pH": 7,
+      "Incompatibility Drugs": "Dobutamine, midazolam, milrinone.",
+      "Compatibile drugs": "Y-site: Aztreonam, bivalirudin, cisatracurium, clarithromycin, granisetron, piperacillin with tazobactam, propofol, remifentanil",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Bupivacaine"
+    },
+    {
+      "Drug names": "Caffine citrate"
+    },
+    {
+      "Drug names": "Calcium-oral"
+    },
+    {
+      "Drug names": "Calcium chloride 10%",
+      "IV Fluid": "Solutions: NaCl 0.9%, Gluc 5%, Gluc-NaCl",
+      "Storage": "Store below 25\u0002C in original packaging.",
+      "pH": "5--8",
+      "Incompatibility Drugs": "Sodium bicarbonate, other bicarbonates, phosphates, tartrates and sulfates. Amphotericin.",
+      "Compatibile drugs": "Y-site: Adrenaline (epinephrine), lidocaine, milrinone, noradrenaline (norepinephrine), verapamil",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Calcium gluconate 10%",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s",
+      "Storage": "Store below 25\u0002C in original packaging. Do not freeze.",
+      "pH": "6--8.2",
+      "Incompatibility Drugs": "Bicarbonates, phosphates, tartrates and sulfates. Amphotericin, dobutamine",
+      "Compatibile drugs": "Y-site: No information"
+    },
+    {
+      "Drug names": "Calfactant"
+    },
+    {
+      "Drug names": "Captopril"
+    },
+    {
+      "Drug names": "Carglumic acid"
+    },
+    {
+      "Drug names": "Caspofungin",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Hartmann’s",
+      "Storage": "Store at 2--8\u0002C in original packaging.",
+      "pH": 6.6,
+      "Incompatibility Drugs": "Caspofungin is incompatible with Gluc solutions. Otherwise no information",
+      "Compatibile drugs": "Y-site: No information"
+    },
+    {
+      "Drug names": "CeFAZolin"
+    },
+    {
+      "Drug names": "CefOXitin"
+    },
+    {
+      "Drug names": "CefTAZdime",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9% (also with added KCl), Gluc 5%, NaCl-Gluc, Hartmann’s, Ringer’s",
+      "Storage": "Store below 25\u0002C in original packaging",
+      "pH": "6--8",
+      "Incompatibility Drugs": "Sodium bicarbonate. Acetylcysteine, amikacin, amiodarone, amphotericin, cisatracurium, clarithromycin, dobutamine, erythromycin lactobionate, fluconazole, gentamicin, midazolam, pantoprazole, phenytoin sodium, propofol, tobramycin, vancomycin.",
+      "Compatibile drugs": "Y-site: Aciclovir, aztreonam, dopamine, esmolol, furosemide, granisetron,\r\nisosorbide dinitrate, ketamine, labetalol, methylprednisolone sodium succinate,\r\nmetronidazole (in the same bag), ondansetron, ranitidine, remifentanil, sodium\r\nvalproate, tigecycline",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "CefTRIAxone",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: Gluc 5%, NaCl 0.9%, Gluc-NaCl (all with added KCl)",
+      "Storage": "Store below 25\u0002C in original packaging",
+      "pH": "6--8",
+      "Incompatibility Drugs": "Ceftriaxone is incompatible with Ca-containing solutions, e.g. Hartmann’s, Ringer’s. Fatalities have occurred in neonates and infants due to precipitates forming in lungs and kidneys. Aminophylline, amphotericin, clindamycin phosphate, fluconazole, gentamicin, labetalol, tobramycin, vancomycin.",
+      "Compatibile drugs": "Y-site: Aciclovir, amikacin, aztreonam, cisatracurium, granisetron,\r\nmetronidazole, pantoprazole, propofol, remifentanil, sodium bicarbonate,\r\ntigecycline",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Cefepime"
+    },
+    {
+      "Drug names": "Cefotaxime"
+    },
+    {
+      "Drug names": "Chloral hydrate"
+    },
+    {
+      "Drug names": "Chloramphenicol",
+      "IV Fluid": "Flush: NaCl 0.9% Solutions: NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s, Ringer’s",
+      "Storage": "Store below 25\u0002C in original packaging",
+      "pH": "6.4--7",
+      "Incompatibility Drugs": "Fluconazole, phenytoin sodium, prochlorperazine, vancomycin.",
+      "Compatibile drugs": "Y-site: Aciclovir, amikacin, aminophylline, ampicillin, benzylpenicillin, calcium gluconate, colistimethate sodium, dopamine, esmolol, foscarnet, hydrocortisone sodium succinate, labetalol, magnesium sulfate, methylprednisolone sodium succinate, metronidazole, phytomenadione, ranitidine, sodium bicarbonate, verapamil",
+      "__EMPTY": "."
+    },
+    {
+      "Drug names": "Chlorothiazide"
+    },
+    {
+      "Drug names": "Cimetidine"
+    },
+    {
+      "Drug names": "Clindamycin"
+    },
+    {
+      "Drug names": "CloNDine"
+    },
+    {
+      "Drug names": "Clopidogrel"
+    },
+    {
+      "Drug names": "Cyclopentolate (Opthalmic)"
+    },
+    {
+      "Drug names": "DOBUTamine"
+    },
+    {
+      "Drug names": "DOPamine"
+    },
+    {
+      "Drug names": "DT/TD Vaccine"
+    },
+    {
+      "Drug names": "DTaP Vaccine"
+    },
+    {
+      "Drug names": "DTaP-HepB-IPV Combination vaccine"
+    }
+  ],
+  "GM": [
+    {
+      "Drug": "Dexamethasone",
+      "Dose": "0.5--24 mg daily by IM or IV injection/infusion;",
+      "IV Fluids": "NaCl 0.9% Gluc 5%, Hartmann’s, Ringer’s (all with added KCl)",
+      "Storage": "Store below 25\u0004C in original packaging. Do not freeze.",
+      "pH": " 7--8.5",
+      "Incompatible Drug": "Ciprofloxacin, midazolam, vancomycin",
+      "Compatible drug": "Aciclovir, amikacin, aminophylline, aztreonam, cisatracurium, fentanyl, flucloxacillin, fluconazole, foscarnet, granisetron, levofloxacin, linezolid, meropenem, metoclopramide, ondansetron, piperacillin with tazobactam, propofol, ranitidine, verapamil"
+    },
+    {
+      "Drug": "Digoxin",
+      "Dose": "0.75--1 mg by IV infusion over at least 2 hours.",
+      "IV Fluids": "NaCl 0.9%, Gluc 5%, Hartmann’s (all including added KCl)",
+      "Storage": "Store below 25\u0004C in original packaging",
+      "pH": "6.7--7.3",
+      "Incompatible Drug": "Amiodarone, amphotericin, fluconazole, foscarnet, insulin (soluble), propofol.",
+      "Compatible drug": "NaCl 0.9%, Gluc 5%, Hartmann’s (all including added KCl) Y-site: Bivalirudin, ciprofloxacin, cisatracurium, linezolid, meropenem, midazolam, remifentan"
+    },
+    {
+      "Drug": "Digoxin-specific antibody fragments (Digibind, F(ab))",
+      "IV Fluids": "NaCl 0.9%",
+      "Storage": "Store at 2--8\u0004C in original packaging.",
+      "pH": "6--8"
+    },
+    {
+      "Drug": "Enoxaparin sodium",
+      "IV Fluids": "NaCl 0.9%, Gluc 5%",
+      "Storage": "Store below 25\u0001C in original packaging but do not refrigerate. In use: Vial contents should be used within 28 days of first use.",
+      "pH": "5.5--7.5"
+    },
+    {
+      "Drug": "Esmolol hydrochloride",
+      "IV Fluids": "NaCl 0.9%, Gluc 5%, Gluc-NaCl, Hartmann’s (all with added KC",
+      "Storage": "Store below 25\u0001C in original packaging. Do not refrigerate or freeze.",
+      "pH": "4.5--5.5",
+      "Incompatible Drug": "Amikacin, aminophylline, ampicillin, atracurium, benzylpenicillin, ceftazidime, chloramphenicol sodium succinate, cisatracurium, clindamycin, co-trimoxazole, dopamine, erythromycin, fentanyl, gentamicin, glyceryl trinitrate, hydrocortisone sodium succinate, labetalol, linezolid, magnesium sulfate, metronidazole, micafungin, midazolam, phenytoin, propofol, ranitidine, remifentanil, tobramycin, vancomycin, vecuronium bromide",
+      "Compatible drug": "Amphotericin, diazepam, furosemide, pantoprazole, sodium bicarbonate."
+    },
+    {
+      "Drug": "Fentanyl",
+      "IV Fluids": "NaCl 0.9%, Gluc 5% (both with added KCl)",
+      "Storage": "Store below 25\u0002C in original packaging. Controlled Drug.",
+      "pH": "4--7.5",
+      "Incompatible Drug": "Phenytoin sodium, thiopental",
+      "Compatible drug": "Adrenaline (epinephrine), atracurium, cisatracurium, dexamethasone sodium phosphate, dobutamine, dopamine, esmolol, furosemide, glyceryl trinitrate, hydrocortisone sodium succinate, labetalol, linezolid, lorazepam, metoclopramide, midazolam, propofol, ranitidine, remifentanil"
+    },
+    {
+      "Drug": "Fluconazole",
+      "IV Fluids": ": NaCl 0.9%, Gluc 5%, Hartmann’s, Ringer’s (all including added KCl)",
+      "Storage": "Store below 25\u0002C in original packaging. Do not freeze.\r\nInfusions are single use only -- discard any unused portion.",
+      "pH": "4--8 in NaCl 0.9%",
+      "Incompatible Drug": "Amphotericin, ampicillin, calcium gluconate, cefotaxime, ceftazidime, ceftriaxone, cefuroxime, chloramphenicol sodium succinate, clindamycin phosphate, co-trimoxazole, diazepam, digoxin, furosemide, imipenem with cilastatin, pantoprazole.",
+      "Compatible drug": "Aciclovir, amikacin, aminophylline, aztreonam, benzylpenicillin,\r\nciprofloxacin, cisatracurium, dexamethasone sodium phosphate, dobutamine,\r\ndopamine, foscarnet, ganciclovir, gentamicin, glyceryl trinitrate, linezolid,\r\nmeropenem, metronidazole, midazolam, ondansetron, phenytoin sodium,\r\npiperacillin with tazobactam, propofol, ranitidine, remifentanil, ticarcillin with\r\nclavulanate, tigecycline, tobramycin, vancomycin, vasopressin (synthetic),\r\nvecuronium bromide"
+    },
+    {
+      "Drug": "Flucytosine",
+      "IV Fluids": "NaCl 0.9%, Gluc 5%, Gluc-NaCl",
+      "Storage": "Store at 18--25\u0002C in original packaging. Precipitation may occur below 18\u0002C. Decomposition, with the formation of fluorouracil, may occur with prolonged storage above 25\u0002C.",
+      "pH": 7.4,
+      "Incompatible Drug": "Do not mix with other drugs during infusion"
+    },
+    {
+      "Drug": "Famotidine",
+      "Dose": "0.25 to 0.5 mg/kg/dose IV slow push every 24 hours.",
+      "IV Fluids": "D5W, D10W, NS, and Dex/AA solutions",
+      "Incompatible Drug": "Azithromycin, cefepime and piperacillin/tazobactam.",
+      "Compatible drug": "Acyclovir, aminophylline, amiodarone, ampicillin, atropine, aztreonam, calcium gluconate, caspofungin, cefazolin, cefotaxime, cefoxitin, ceftazidime, ceftriaxone, dexamethasone, digoxin, dobutamine, dopamine, enalaprilat, epinephrine, erythromycin lactobionate, esmolol, fluconazole, flumazenil, furosemide, gentamicin, heparin, hydrocortisone succinate, imipenem/cilastatin, insulin, isoproterenol, lidocaine, linezolid, lorazepam, magnesium sulfate, metoclopramide, mezlocillin, midazolam, morphine, nafcillin, nicardipine, nitroglycerin, oxacillin, phenytoin, piperacillin, potassium chloride, procainamide, propofol, remifentanil, sodium bicarbonate, sodium nitroprusside, ticarcillin/clavulanate, vancomycin, and vitamin K1."
+    },
+    {
+      "Drug": "Fat Emulsion",
+      "IV Fluids": "D5W, D10W, and NS",
+      "Incompatible Drug": "Acyclovir, amikacin, amphotericin B, ganciclovir, lorazepam, magnesium chloride, midazolam, octreotide acetate, pentobarbital, phenobarbital, and phenytoin.",
+      "Compatible drug": "Dex/AA. Ampicillin, cefazolin, cefotaxime, cefoxitin, chloramphenicol, clindamycin, digoxin, erythromycin lactobionate, famotidine, furosemide, gentamicin, heparin (1 unit/mL or less), isoproterenol, lidocaine, meropenem, netilmicin, norepinephrine, oxacillin, penicillin G, piperacillin/tazobactam, potassium chloride, sulfamethoxazole/trimethoprim, ticarcillin, and tobramycin."
+    },
+    {
+      "Drug": "Flumazenil",
+      "IV Fluids": "D5W, Lactated Ringer's, and NS",
+      "Compatible drug": "Aminophylline, cimetidine, dobutamine, dopamine, famotidine, heparin, lidocaine, procainamide, and ranitidine."
+    },
+    {
+      "Drug": "Fosphenytoin",
+      "IV Fluids": "D5W, D10W and NS.",
+      "Incompatible Drug": "Midazolam",
+      "Compatible drug": "Lorazepam, phenobarbital, and potassium chloride"
+    },
+    {
+      "Drug": "Furosemide",
+      "IV Fluids": "NS, D5W, D10W, and sterile water for injection.",
+      "Incompatible Drug": "Azithromycin, caspofungin, ciprofloxacin, dobutamine, dopamine, erythromycin lactobionate, esmolol, fluconazole, gentamicin, hydralazine, isoproterenol, metoclopramide, midazolam, milrinone, netilmicin, nicardipine, and vecuronium.",
+      "Compatible drug": "Dex/AA Solutions, fat emulsion. Amikacin, aminophylline, amiodarone, ampicillin, \r\natropine, aztreonam, bumetanide, calcium gluconate, cefepime, ceftazidime, cimetidine, \r\ndexamethasone, digoxin, epinephrine, famotidine, fentanyl, heparin, hydrocortisone \r\nsuccinate, ibuprofen lysine, indomethacin, lidocaine, lorazepam, linezolid, meropenem, \r\nmicafungin, morphine, nitroglycerin, penicillin G, piperacillin/tazobactam, potassium \r\nchloride, propofol, prostaglandin E1, ranitidine, remifentanil, sodium bicarbonate, \r\nsodium nitroprusside, and tobramycin."
+    },
+    {
+      "Drug": "Ganciclovir",
+      "IV Fluids": "NS, D5W, and LR.",
+      "Incompatible Drug": "Fat emulsion. Aztreonam, cefepime, and piperacillin/tazobactam.",
+      "Compatible drug": "Enalaprilat, fluconazole, linezolid, propofol, and remifentanil."
+    },
+    {
+      "Drug": "Gentamicin",
+      "IV Fluids": "D5W, D10W, and NS.",
+      "Incompatible Drug": "Amphotericin B, ampicillin, azithromycin, furosemide, imipenem/cilastatin, heparin (concentrations greater than 1 unit/mL), indomethacin, mezlocillin, nafcillin, oxacillin, propofol, and ticarcillin/clavulanate.",
+      "Compatible drug": "Dex/AA solutions and fat emulsion. Acyclovir, alprostadil, amiodarone, aztreonam, \r\ncaffeine citrate, cefepime, cefotaxime, cefoxitin, ceftazidime, ceftriaxone, cimetidine, \r\nclindamycin, dopamine, enalaprilat, esmolol, famotidine, fluconazole, gentamicin, \r\nheparin (concentrations of 1 unit/mL or less), insulin, linezolid, lorazepam, magnesium \r\nsulfate, meropenem, metronidazole, midazolam, milrinone, morphine, nicardipine, \r\npancuronium bromide, penicillin g, prostaglandin E1, ranitidine, remifentanil, \r\nvecuronium, and zidovudine"
+    }
+  ]
+}
