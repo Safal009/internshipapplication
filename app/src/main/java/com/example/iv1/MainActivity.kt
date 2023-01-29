@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.iv1.data.DataState
 import com.example.iv1.data.Drug
@@ -58,7 +57,7 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun ShowLazyList(drugs: MutableList<String>) {
+    fun ShowLazyList(drugs: ArrayList<Drug>) {
         LazyColumn {
             items(drugs) {drug ->
                 CardItem(drug)
@@ -67,10 +66,10 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun CardItem(drug: String) {
+    fun CardItem(drug: Drug) {
         Card(modifier = Modifier.fillMaxWidth().height(150.dp).padding(10.dp)) {
             Box(modifier = Modifier.fillMaxSize()) {
-                Text(text = drug, fontSize = MaterialTheme.typography.h5.fontSize, modifier = Modifier.fillMaxWidth(),
+                Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize, modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Center)
             }
         }
