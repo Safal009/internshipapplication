@@ -1,8 +1,5 @@
 package com.example.iv1.ui
 
-import android.content.ContentValues.TAG
-import android.nfc.Tag
-import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -10,10 +7,8 @@ import com.example.iv1.data.DataState
 import com.example.iv1.data.Drug
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.getValue
 
 class DrugViewModel: ViewModel() {
     val response: MutableState<DataState> = mutableStateOf(DataState.Empty)
@@ -25,13 +20,13 @@ class DrugViewModel: ViewModel() {
     private fun fetchDataFromFirebase() {
         response.value = DataState.Loading
         val ref = FirebaseDatabase.getInstance().getReference()
-        val drugRef = ref.child("Drugs/0").child("incompatible_drugs")
+        val drugRef = ref.child("Drugs")
 
         drugRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                var drugList: ArrayList<String> = ArrayList()
+                val drugList: ArrayList<Drug> = ArrayList()
                 for(ds: DataSnapshot in snapshot.children) run {
-                    val drug: String? = ds.value as String?
+                    val drug: Drug? = ds.getValue(Drug::class.java)
                     if (drug != null) {
                         drugList.add(drug)
                     }
