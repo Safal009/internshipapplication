@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">IV1</string>
+    <string name="app_name">IV Application</string>
+    <string name="start">Start Screen</string>
+    <string name="review">Review</string>
+    <string name="incomp_res">Incompatibility Results</string>
+    <string name="back_button">Back</string>
 </resources>
