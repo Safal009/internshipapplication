@@ -17,7 +17,10 @@ import com.example.iv1.data.Drug
 val tempList: ArrayList<Drug> = ArrayList()
 
 @Composable
-fun SetData(viewModel: DrugViewModel) {
+fun SetData(
+    viewModel: DrugViewModel,
+    onDoneBtnClicked: (ArrayList<Drug>) -> Unit
+) {
     when(val result = viewModel.response.value) {
         is DataState.Loading -> {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -25,7 +28,7 @@ fun SetData(viewModel: DrugViewModel) {
             }
         }
         is DataState.Success -> {
-            ShowDrugList(result.data)
+            ShowDrugList(result.data, onDoneBtnClicked = onDoneBtnClicked)
         }
         is DataState.Failure -> {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -42,12 +45,19 @@ fun SetData(viewModel: DrugViewModel) {
 
 
 @Composable
-fun ShowDrugList(drugs: ArrayList<Drug>) {
+fun ShowDrugList(
+    drugs: ArrayList<Drug>,
+    onDoneBtnClicked: (ArrayList<Drug>) -> Unit,
+) {
     LazyColumn {
         items(drugs) {drug ->
             ListItem(drug)
-
         }
+    }
+    OutlinedButton(
+        onClick = { onDoneBtnClicked(drugs) },
+    ) {
+        Text(text = "Done")
     }
 }
 
@@ -70,7 +80,9 @@ fun ListItem(drug: Drug) {
 }
 
 fun selectDrug(drug: Drug) {
-    tempList.add(drug)
+    if(!tempList.contains(drug)) {
+        tempList.add(drug)
+    }
     println(tempList)
 }
 
