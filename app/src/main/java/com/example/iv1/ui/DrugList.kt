@@ -72,8 +72,10 @@ fun ListItem(drug: Drug) {
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
-            OutlinedButton(onClick = { selectDrug(drug) }) {
-                Text(text = "Add")
+            if(!tempList.contains(drug)) {
+                OutlinedButton(onClick = { selectDrug(drug) }) {
+                    Text(text = "Add")
+                }
             }
         }
     }
@@ -83,6 +85,5 @@ fun selectDrug(drug: Drug) {
     if(!tempList.contains(drug)) {
         tempList.add(drug)
     }
-    println(tempList)
 }
 
