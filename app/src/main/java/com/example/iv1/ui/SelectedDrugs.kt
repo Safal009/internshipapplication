@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -14,6 +15,8 @@ import com.example.iv1.data.Drug
 @Composable
 fun ShowSelectedList(
     drugs: ArrayList<Drug>,
+    onCheckBtnClicked: (ArrayList<Drug>) -> Unit,
+    onCancelBtnClicked: () -> Unit = {}
 ) {
     if(drugs.isEmpty() || drugs.size == 1) {
         Text(text = "Not enough drugs to perform compatibility check.", textAlign = TextAlign.Center)
@@ -21,7 +24,19 @@ fun ShowSelectedList(
         LazyColumn {
             items(drugs) {drug ->
                 SelectedListItem(drug)
+            }
+        }
+        Row{
+            OutlinedButton(
+                onClick = { onCheckBtnClicked(drugs) },
+            ) {
+                Text(text = "Check")
+            }
 
+            OutlinedButton(
+                onClick = { onCancelBtnClicked() },
+            ) {
+                Text(text = "Cancel")
             }
         }
     }
@@ -39,5 +54,6 @@ fun SelectedListItem(drug: Drug) {
         Row(modifier = Modifier.fillMaxSize()) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
         }
+
     }
 }
