@@ -20,7 +20,9 @@ import com.example.iv1.ui.*
 enum class IVScreen(@StringRes val title: Int) {
     Start(title = R.string.app_name),
     DrugList(title = R.string.start),
-    SelectedDrugs(title = R.string.review)
+    SelectedDrugs(title = R.string.review),
+    Results(title = R.string.incomp_res),
+    IRCalc(title = R.string.ir_calc)
 }
 
 @Composable
@@ -71,7 +73,7 @@ fun Start(
         ) {
             composable(route = IVScreen.Start.name) {
                 StartScreen(
-                    onIRCalcButtonClicked = { /*TODO: Navigate to Infusion Rate Calculator */ },
+                    onIRCalcButtonClicked = { navController.navigate(IVScreen.IRCalc.name) },
                     onCompatibilityCheckButtonClicked = {
                         navController.navigate(IVScreen.DrugList.name)
                     }
@@ -85,16 +87,35 @@ fun Start(
                         navController.navigate(IVScreen.SelectedDrugs.name)
                     }
                 )
-                /* TODO: implement cancel button logic */
             }
 
             composable(route = IVScreen.SelectedDrugs.name) {
-                ShowSelectedList(drugs = tempList)
-                /* TODO: display list of selected drugs
-                *   two buttons : Cancel and Check
-                * TODO: cancel and return to home screen
-                *  check the incompatibility for selected drugs. */
+                ShowSelectedList(
+                    drugs = tempList,
+                    onCheckBtnClicked = {
+                        navController.navigate(IVScreen.Results.name)
+                    },
+                    onCancelBtnClicked = {
+                        cancelAndNavigateToStart(navController)
+                    }
+                )
+            }
+
+            composable(route = IVScreen.Results.name) {
+                StartCheck()
+            }
+
+            composable(route = IVScreen.IRCalc.name) {
+                IRScreen()
             }
         }
     }
+}
+
+
+private fun cancelAndNavigateToStart(
+    navController: NavHostController
+) {
+    tempList.clear()
+    navController.popBackStack(IVScreen.Start.name, inclusive = false)
 }
