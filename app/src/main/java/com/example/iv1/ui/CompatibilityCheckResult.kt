@@ -1,5 +1,7 @@
 package com.example.iv1.ui
 
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -7,9 +9,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.iv1.data.Drug
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun StartCheck() {
     val toCheck: ArrayList<Pair<Drug, Drug>> = ArrayList()
@@ -21,27 +25,33 @@ fun StartCheck() {
         }
     }
     LazyColumn {
-        items(toCheck) {drugPair ->
-            Check(drugPair)
+        toCheck.forEach { pair ->
+            stickyHeader {
+                Text(
+                    text = pair.first.drug_name.trim() + " -- " + pair.second.drug_name.trim(),
+                    color = Color.White,
+                    modifier = Modifier
+                        .background(Color.Gray)
+                        .padding(5.dp)
+                        .fillMaxWidth()
+                )
+            }
+            items(listOf(pair)) {drugPair ->
+                DisplayCheck(drugPair)
+            }
         }
     }
 }
 
 @Composable
-fun Check(checkWith: Pair<Drug, Drug>) {
+fun DisplayCheck(toCheck: Pair<Drug, Drug>) {
     val res: ArrayList<String> = ArrayList()
-    var temp = false
-    for(i in 0 until checkWith.first.incompatible_drugs.size) {
-        res.add(checkWith.first.incompatible_drugs[i].lowercase())
+    for(i in 0 until toCheck.first.incompatible_drugs.size) {
+        res.add(toCheck.first.incompatible_drugs[i].lowercase().trim())
     }
-    for(i in 0 until res.size) {
-        if(checkWith.first.incompatible_drugs[i].lowercase() == checkWith.second.drug_name.lowercase()) {
-            temp = true
-            break
-        } else {
-            temp = false
-        }
-    }
+    val temp = res.indexOf(toCheck.second.drug_name.lowercase().trim())
+//    println(toCheck.second.drug_name.lowercase().trim())
+//    println(res)
 
     Box(
         modifier = Modifier
@@ -50,7 +60,7 @@ fun Check(checkWith: Pair<Drug, Drug>) {
             .padding(10.dp)
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
-            Text(text = checkWith.first.drug_name + " -- " + checkWith.second.drug_name + " --> " + temp, fontSize = MaterialTheme.typography.h5.fontSize)
+            Text(text = toCheck.first.drug_name.trim() + " -- " + toCheck.second.drug_name.trim() + " --> " + temp, fontSize = MaterialTheme.typography.h5.fontSize)
         }
     }
 }
