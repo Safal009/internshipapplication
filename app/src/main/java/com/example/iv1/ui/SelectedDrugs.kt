@@ -30,7 +30,7 @@ fun ShowSelectedList(
             OutlinedButton(
                 onClick = { onCheckBtnClicked(drugs) },
             ) {
-                Text(text = "Check")
+                Text(text = "Check Compatibility")
             }
 
             OutlinedButton(
@@ -51,9 +51,22 @@ fun SelectedListItem(drug: Drug) {
             .height(120.dp)
             .padding(10.dp)
     ) {
-        Row(modifier = Modifier.fillMaxSize()) {
+        Row(modifier = Modifier
+            .fillMaxSize()
+            .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
+            OutlinedButton(onClick = { removeDrug(drug) }) {
+                Text(text = "Remove")
+            }
         }
 
+    }
+}
+
+fun removeDrug(drug: Drug) {
+    if(tempList.contains(drug)) {
+        tempList.remove(drug)
     }
 }

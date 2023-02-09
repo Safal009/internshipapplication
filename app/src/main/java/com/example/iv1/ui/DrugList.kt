@@ -57,7 +57,7 @@ fun ShowDrugList(
     OutlinedButton(
         onClick = { onDoneBtnClicked(drugs) },
     ) {
-        Text(text = "Done")
+        Text(text = "Next")
     }
 }
 
@@ -70,7 +70,11 @@ fun ListItem(drug: Drug) {
             .height(80.dp)
             .padding(10.dp)
     ) {
-        Row(modifier = Modifier.fillMaxSize()) {
+        Row(modifier = Modifier
+            .fillMaxSize()
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+        ) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
             if(!tempList.contains(drug)) {
                 OutlinedButton(onClick = { selectDrug(drug) }) {
