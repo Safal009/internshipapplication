@@ -14,8 +14,6 @@ import androidx.compose.ui.unit.dp
 import com.example.iv1.data.DataState
 import com.example.iv1.data.Drug
 
-val tempList: ArrayList<Drug> = ArrayList()
-
 @Composable
 fun SetData(
     viewModel: DrugViewModel,
@@ -28,7 +26,7 @@ fun SetData(
             }
         }
         is DataState.Success -> {
-            ShowDrugList(result.data, onDoneBtnClicked = onDoneBtnClicked)
+            ShowDrugList(result.data, onDoneBtnClicked = onDoneBtnClicked, viewModel)
         }
         is DataState.Failure -> {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -48,10 +46,11 @@ fun SetData(
 fun ShowDrugList(
     drugs: ArrayList<Drug>,
     onDoneBtnClicked: (ArrayList<Drug>) -> Unit,
+    viewModel: DrugViewModel
 ) {
     LazyColumn {
         items(drugs) {drug ->
-            ListItem(drug)
+            ListItem(drug, viewModel)
         }
     }
     OutlinedButton(
@@ -63,7 +62,7 @@ fun ShowDrugList(
 
 
 @Composable
-fun ListItem(drug: Drug) {
+fun ListItem(drug: Drug, viewModel: DrugViewModel) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -76,18 +75,11 @@ fun ListItem(drug: Drug) {
         horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
-            if(!tempList.contains(drug)) {
-                OutlinedButton(onClick = { selectDrug(drug) }) {
+            if(!viewModel.getSelectedDrugList().contains(drug)) {
+                OutlinedButton(onClick = { viewModel.selectDrug(drug) }) {
                     Text(text = "Add")
                 }
             }
         }
     }
 }
-
-fun selectDrug(drug: Drug) {
-    if(!tempList.contains(drug)) {
-        tempList.add(drug)
-    }
-}
-

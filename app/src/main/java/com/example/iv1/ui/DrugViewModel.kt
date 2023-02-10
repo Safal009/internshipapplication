@@ -13,6 +13,8 @@ import com.google.firebase.database.ValueEventListener
 class DrugViewModel: ViewModel() {
     val response: MutableState<DataState> = mutableStateOf(DataState.Empty)
 
+    val tempList: ArrayList<Drug> = ArrayList()
+
     init {
         fetchDataFromFirebase()
     }
@@ -39,5 +41,21 @@ class DrugViewModel: ViewModel() {
             }
 
         })
+    }
+
+    fun selectDrug(drug: Drug) {
+        if(!tempList.contains(drug)) {
+            tempList.add(drug)
+        }
+    }
+
+    fun removeDrug(drug: Drug) {
+        if(tempList.contains(drug)) {
+            tempList.remove(drug)
+        }
+    }
+
+    fun getSelectedDrugList(): ArrayList<Drug> {
+        return tempList
     }
 }

@@ -64,7 +64,7 @@ fun Start(
                 navigateUp = { navController.navigateUp() }
             )
         }
-    ) { innerPadding -> val uiState by viewModel.response
+    ) { innerPadding ->
 
         NavHost(
             navController = navController,
@@ -91,18 +91,19 @@ fun Start(
 
             composable(route = IVScreen.SelectedDrugs.name) {
                 ShowSelectedList(
-                    drugs = tempList,
+                    drugs = viewModel.getSelectedDrugList(),
                     onCheckBtnClicked = {
                         navController.navigate(IVScreen.Results.name)
                     },
                     onCancelBtnClicked = {
-                        cancelAndNavigateToStart(navController)
-                    }
+                        cancelAndNavigateToStart(navController, viewModel)
+                    },
+                    viewModel
                 )
             }
 
             composable(route = IVScreen.Results.name) {
-                StartCheck()
+                StartCheck(viewModel)
             }
 
             composable(route = IVScreen.IRCalc.name) {
@@ -114,8 +115,9 @@ fun Start(
 
 
 private fun cancelAndNavigateToStart(
-    navController: NavHostController
+    navController: NavHostController,
+    viewModel: DrugViewModel
 ) {
-    tempList.clear()
+    viewModel.tempList.clear()
     navController.popBackStack(IVScreen.Start.name, inclusive = false)
 }

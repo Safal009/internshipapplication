@@ -16,21 +16,22 @@ import com.example.iv1.data.Drug
 fun ShowSelectedList(
     drugs: ArrayList<Drug>,
     onCheckBtnClicked: (ArrayList<Drug>) -> Unit,
-    onCancelBtnClicked: () -> Unit = {}
+    onCancelBtnClicked: () -> Unit = {},
+    viewModel: DrugViewModel
 ) {
     if(drugs.isEmpty() || drugs.size == 1) {
         Text(text = "Not enough drugs to perform compatibility check.", textAlign = TextAlign.Center)
     } else {
         LazyColumn {
             items(drugs) {drug ->
-                SelectedListItem(drug)
+                SelectedListItem(drug, viewModel)
             }
         }
         Row{
             OutlinedButton(
                 onClick = { onCheckBtnClicked(drugs) },
             ) {
-                Text(text = "Check Compatibility")
+                Text(text = "Check Incompatibility")
             }
 
             OutlinedButton(
@@ -44,7 +45,10 @@ fun ShowSelectedList(
 
 
 @Composable
-fun SelectedListItem(drug: Drug) {
+fun SelectedListItem(
+    drug: Drug,
+    viewModel: DrugViewModel
+) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -57,7 +61,7 @@ fun SelectedListItem(drug: Drug) {
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = drug.drug_name, fontSize = MaterialTheme.typography.h5.fontSize)
-            OutlinedButton(onClick = { removeDrug(drug) }) {
+            OutlinedButton(onClick = { viewModel.removeDrug(drug) }) {
                 Text(text = "Remove")
             }
         }
@@ -65,8 +69,4 @@ fun SelectedListItem(drug: Drug) {
     }
 }
 
-fun removeDrug(drug: Drug) {
-    if(tempList.contains(drug)) {
-        tempList.remove(drug)
-    }
-}
+

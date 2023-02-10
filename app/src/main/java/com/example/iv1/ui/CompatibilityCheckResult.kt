@@ -15,12 +15,13 @@ import com.example.iv1.data.Drug
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun StartCheck() {
+fun StartCheck(viewModel: DrugViewModel) {
+    val drugList = viewModel.getSelectedDrugList()
     val toCheck: ArrayList<Pair<Drug, Drug>> = ArrayList()
-    for(i in 0 until tempList.size - 1) {
-        for(j in i+1 until tempList.size) {
+    for(i in 0 until drugList.size - 1) {
+        for(j in i+1 until drugList.size) {
             if(i != j) {
-                toCheck.add(Pair(tempList[i], tempList[j]))
+                toCheck.add(Pair(drugList[i], drugList[j]))
             }
         }
     }
@@ -37,19 +38,20 @@ fun StartCheck() {
                 )
             }
             items(listOf(pair)) {drugPair ->
-                DisplayCheck(drugPair)
+                DisplayCheck(drugPair.first, drugPair.second)
             }
         }
     }
 }
 
 @Composable
-fun DisplayCheck(toCheck: Pair<Drug, Drug>) {
+fun DisplayCheck(drug1: Drug, drug2: Drug) {
     val res: ArrayList<String> = ArrayList()
-    for(i in 0 until toCheck.first.incompatible_drugs.size) {
-        res.add(toCheck.first.incompatible_drugs[i].lowercase().trim())
+    for(i in 0 until drug1.incompatibility_drugs.size) {
+        res.add(drug1.incompatibility_drugs[i].lowercase().trim())
     }
-    val temp = res.indexOf(toCheck.second.drug_name.lowercase().trim())
+    val temp = res.contains(drug2.drug_name.lowercase().trim())
+
 //    println(toCheck.second.drug_name.lowercase().trim())
 //    println(res)
 
@@ -60,7 +62,7 @@ fun DisplayCheck(toCheck: Pair<Drug, Drug>) {
             .padding(10.dp)
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
-            Text(text = toCheck.first.drug_name.trim() + " -- " + toCheck.second.drug_name.trim() + " --> " + temp, fontSize = MaterialTheme.typography.h5.fontSize)
+            Text(text = drug1.drug_name.trim() + " -- " + drug2.drug_name.trim() + " --> " + temp, fontSize = MaterialTheme.typography.h5.fontSize)
         }
     }
 }
